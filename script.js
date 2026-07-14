@@ -1,0 +1,1 @@
+const b=document.getElementById('abrir');const m=document.getElementById('musica');if(b)b.onclick=()=>{if(m)m.play().catch(()=>{});document.getElementById('introduccion').scrollIntoView({behavior:'smooth'});}
