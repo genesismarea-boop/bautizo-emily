@@ -212,7 +212,7 @@ function iniciarAnimaciones() {
 
     const elementos = document.querySelectorAll(
 
-        ".fade, .fade-up, .fade-left, .fade-right, .zoom"
+        ".fade, .fade-up, .fade-left, .fade-right, .zoom, .timeline-item"
 
     );
 
