@@ -1,1 +1,748 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>El Bautizo de Emily</title><link rel="stylesheet" href="style.css"></head><body><header class="hero"><p>“Toda buena dádiva y todo don perfecto descienden de lo alto.”<br><strong>Santiago 1:17</strong></p><h1>Emily</h1><h2>El Bautizo de Emily</h2><p>Celebrando también sus 2 añitos</p><button>Abrir invitación</button></header><main><section><h2>Bienvenidos</h2><p>Acompáñanos a celebrar el Bautizo de nuestra querida Emily y agradecer a Dios por cada bendición recibida, celebrando también sus dos primeros años de vida.</p></section><section><h2>Cuenta regresiva</h2><div id="timer"></div></section><section><h2>Ceremonia</h2><p>Parroquia San José Obrero · 24 de octubre de 2026 · 1:50 PM</p></section><section><h2>Recepción</h2><p>Salón Infinity · 4:00 PM</p></section><section><h2>Dress Code</h2><p>Colores claros.</p></section><section><h2>Galería</h2><p>Fotografías de Emily.</p></section><section><h2>Un camino lleno de amor</h2><p>Línea del tiempo.</p></section><section><h2>Mesa de Regalos</h2></section><section><h2>Confirma tu asistencia</h2></section></main><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>El Bautizo de Emily</title>
+
+<meta name="description"
+content="Invitación al Bautizo de Emily">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==================================
+LOADER
+===================================-->
+
+<div id="loader">
+
+<div class="loader-heart">
+
+💖
+
+</div>
+
+</div>
+
+<!--==================================
+PORTADA
+===================================-->
+
+<header class="hero">
+
+<!-- FOTO PRINCIPAL -->
+
+<!-- Sustituye por tu fotografía -->
+
+<img
+src="imagenes/portada.jpg"
+alt="Emily"
+class="hero-image">
+
+<div class="hero-content">
+
+<p class="fade">
+
+"Toda buena dádiva y todo don perfecto desciende de lo alto"
+
+</p>
+
+<p class="fade">
+
+<strong>Santiago 1:17</strong>
+
+</p>
+
+<h1 class="fade">
+
+Emily
+
+</h1>
+
+<h3 class="fade">
+
+El Bautizo de Emily
+
+</h3>
+
+<p class="fecha fade">
+
+24 • Octubre • 2026
+
+</p>
+
+<a href="#bienvenida"
+class="btn"
+id="openInvitation">
+
+Abrir invitación
+
+</a>
+
+</div>
+
+</header>
+
+<!--==================================
+BIENVENIDA
+===================================-->
+
+<section
+id="bienvenida">
+
+<div class="container">
+
+<h2 class="fade">
+
+Bienvenidos
+
+</h2>
+
+<div class="divider"></div>
+
+<p class="fade">
+
+Con inmensa alegría queremos compartir con ustedes un momento muy especial en nuestras vidas.
+
+Hoy damos gracias a Dios por el regalo de nuestra hija Emily, quien recibirá el Sacramento del Bautismo, iniciando su camino de fe rodeada del amor de su familia y de las personas que más queremos.
+
+Además, celebraremos con mucha ilusión sus dos primeros años de vida.
+
+Será un honor contar con su presencia para hacer de este día un recuerdo inolvidable.
+
+</p>
+
+<div class="hearts">
+
+<span class="heart">🤍</span>
+
+<span class="heart">🤍</span>
+
+<span class="heart">🤍</span>
+
+<span class="heart">🤍</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!--==================================
+CUENTA REGRESIVA
+===================================-->
+
+<section
+class="countdown-section">
+
+<div class="container">
+
+<h2>
+
+Faltan...
+
+</h2>
+
+<p class="countdown-text">
+
+Cada día nos acerca a uno de los momentos más importantes en la vida de Emily.
+
+Esperamos compartir esta hermosa celebración contigo.
+
+</p>
+
+<div class="countdown">
+
+<div class="count-box">
+
+<span id="dias">
+
+00
+
+</span>
+
+<small>Días</small>
+
+</div>
+
+<div class="count-box">
+
+<span id="horas">
+
+00
+
+</span>
+
+<small>Horas</small>
+
+</div>
+
+<div class="count-box">
+
+<span id="minutos">
+
+00
+
+</span>
+
+<small>Minutos</small>
+
+</div>
+
+<div class="count-box">
+
+<span id="segundos">
+
+00
+
+</span>
+
+<small>Segundos</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==================================
+CEREMONIA Y RECEPCIÓN
+===================================-->
+
+<section class="eventos">
+
+    <div class="container">
+
+        <h2 class="fade">
+            Un día muy especial
+        </h2>
+
+        <div class="divider"></div>
+
+        <div class="cards">
+
+            <!-- CEREMONIA -->
+
+            <div class="card fade-left">
+
+                <div class="icon-circle">
+                    <i class="fa-solid fa-church"></i>
+                </div>
+
+                <h3>Ceremonia Religiosa</h3>
+
+                <p class="hora">
+                    1:50 PM
+                </p>
+
+                <p class="direccion">
+                    Parroquia San José Obrero
+                    <br>
+                    Av. Antonio López Sáenz
+                    <br>
+                    Ricardo Flores Magón
+                    <br>
+                    Mazatlán, Sinaloa
+                </p>
+
+                <a
+                class="btn-mapa"
+                href="Av. Antonio López Saenz, Ricardo Flores Magón, 82190 Mazatlán, Sin."
+                target="_blank">
+
+                    Ver ubicación
+
+                </a>
+
+            </div>
+
+            <!-- RECEPCIÓN -->
+
+            <div class="card fade-right">
+
+                <div class="icon-circle">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+
+                <h3>Recepción</h3>
+
+                <p class="hora">
+                    4:00 PM
+                </p>
+
+                <p class="direccion">
+                    Salón Infinity
+                    <br>
+                    C. Maritza #18000
+                    <br>
+                    Bugambilias La Esperanza
+                    <br>
+                    Mazatlán, Sinaloa
+                </p>
+
+                <a
+                class="btn-mapa"
+                href="C. Maritza 18000, Bugambilias la Esperanza, 82139 Mazatlán, Sin."
+                target="_blank">
+
+                    Ver ubicación
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+FRASE
+===================================-->
+
+<section>
+
+    <div class="container">
+
+        <div class="frase fade">
+
+            "Hoy Dios toma de la mano a Emily
+            para acompañarla durante toda su vida.
+            Gracias por formar parte de este momento
+            tan importante para nuestra familia."
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+UN CAMINO LLENO DE AMOR
+===================================-->
+
+<section class="timeline-section">
+
+    <div class="container">
+
+        <h2 class="fade">
+            Un camino lleno de amor
+        </h2>
+
+        <p class="timeline-subtitle fade">
+            Cada mes ha sido un regalo de Dios lleno de amor,
+            sonrisas y momentos inolvidables.
+            Hoy queremos compartir un pequeño recorrido por
+            el primer año de vida de Emily.
+        </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes1.jpg" alt="Emily mes 1">
+                </div>
+                <span class="timeline-month">1 Mes</span>
+                <h3>Mi llegada</h3>
+                <p>El día que llenaste nuestras vidas de amor.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes2.jpg" alt="Emily mes 2">
+                </div>
+                <span class="timeline-month">2 Meses</span>
+                <h3>Mis primeras sonrisas</h3>
+                <p>Cada sonrisa iluminaba nuestro hogar.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes3.jpg" alt="Emily mes 3">
+                </div>
+                <span class="timeline-month">3 Meses</span>
+                <h3>Descubriendo el mundo</h3>
+                <p>Todo era nuevo y emocionante para mí.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes4.jpg" alt="Emily mes 4">
+                </div>
+                <span class="timeline-month">4 Meses</span>
+                <h3>Abrazos infinitos</h3>
+                <p>Mi lugar favorito siempre fue estar con mi familia.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes5.jpg" alt="Emily mes 5">
+                </div>
+                <span class="timeline-month">5 Meses</span>
+                <h3>Pequeñas aventuras</h3>
+                <p>Comencé a descubrir nuevas experiencias.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes6.jpg" alt="Emily mes 6">
+                </div>
+                <span class="timeline-month">6 Meses</span>
+                <h3>Medio año de amor</h3>
+                <p>Seis meses llenos de bendiciones.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes7.jpg" alt="Emily mes 7">
+                </div>
+                <span class="timeline-month">7 Meses</span>
+                <h3>Jugando sin parar</h3>
+                <p>Cada día era una nueva aventura.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes8.jpg" alt="Emily mes 8">
+                </div>
+                <span class="timeline-month">8 Meses</span>
+                <h3>Mis primeras travesuras</h3>
+                <p>Con curiosidad descubrí cada rincón.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes9.jpg" alt="Emily mes 9">
+                </div>
+                <span class="timeline-month">9 Meses</span>
+                <h3>Creciendo feliz</h3>
+                <p>Mi corazón seguía llenándose de amor.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes10.jpg" alt="Emily mes 10">
+                </div>
+                <span class="timeline-month">10 Meses</span>
+                <h3>Mis primeros pasitos</h3>
+                <p>Cada logro era motivo de celebración.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes11.jpg" alt="Emily mes 11">
+                </div>
+                <span class="timeline-month">11 Meses</span>
+                <h3>Más sonrisas</h3>
+                <p>Un año lleno de recuerdos inolvidables estaba por llegar.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-photo">
+                    <img src="imagenes/mes12.jpg" alt="Emily mes 12">
+                </div>
+                <span class="timeline-month">1 Año</span>
+                <h3>Mi primer cumpleaños</h3>
+                <p>Gracias Dios por acompañarme en cada paso.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+GALERÍA
+===================================-->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <h2 class="fade">
+            Nuestra pequeña Emily
+        </h2>
+
+        <p class="gallery-description fade">
+            Cada fotografía guarda un recuerdo especial.
+            Gracias por acompañarnos en este hermoso capítulo
+            de la vida de Emily.
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item zoom">
+                <img src="imagenes/galeria1.jpg" alt="Emily">
+            </div>
+
+            <div class="gallery-item zoom">
+                <img src="imagenes/galeria2.jpg" alt="Emily">
+            </div>
+
+            <div class="gallery-item zoom">
+                <img src="imagenes/galeria3.jpg" alt="Emily">
+            </div>
+
+            <div class="gallery-item zoom">
+                <img src="imagenes/galeria4.jpg" alt="Emily">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+DRESS CODE
+===================================-->
+
+<section class="dresscode">
+
+    <div class="container">
+
+        <div class="dresscode-card fade-up">
+
+            <h2>Dress Code</h2>
+
+            <div class="divider"></div>
+
+            <p>
+                Nos encantará que nos acompañes vistiendo
+                <strong>colores claros y tonos suaves</strong>,
+                en armonía con la celebración de este día tan especial.
+            </p>
+
+            <div class="palette">
+
+                <div class="color-circle color1" title="Marfil"></div>
+
+                <div class="color-circle color2" title="Rosa Palo"></div>
+
+                <div class="color-circle color3" title="Rosa Empolvado"></div>
+
+                <div class="color-circle color4" title="Dorado Suave"></div>
+
+                <div class="color-circle color5" title="Verde Salvia"></div>
+
+            </div>
+
+            <p class="family-note">
+                Gracias por ayudarnos a crear una celebración llena de armonía y elegancia.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+MESA DE REGALOS
+===================================-->
+
+<section class="gifts">
+
+    <div class="container">
+
+        <div class="gift-card fade-up">
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+            <h2>Mesa de Regalos</h2>
+
+            <p>
+                Tu presencia será el mejor regalo para Emily.
+                Sin embargo, si deseas tener un detalle con ella,
+                podrás encontrar su mesa de regalos en Liverpool.
+            </p>
+
+            <a
+                href="#"
+                class="gift-button"
+                target="_blank">
+
+                Ver mesa de regalos
+
+            </a>
+
+            <p class="gift-size">
+                Emily usa talla 3 años 💕
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+CONFIRMA TU ASISTENCIA
+===================================-->
+
+<section class="rsvp">
+
+    <div class="container">
+
+        <div class="rsvp-card fade-up">
+
+            <h2>Confirma tu asistencia</h2>
+
+            <div class="divider"></div>
+
+            <p>
+
+                Tu presencia hará este día aún más especial.
+
+                Agradeceremos que nos confirmes tu asistencia
+                para poder recibirte con mucho cariño.
+
+            </p>
+
+            <a
+
+                href="https://wa.me/5216691238605?text=Hola,%20confirmo%20mi%20asistencia%20al%20Bautizo%20de%20Emily."
+
+                target="_blank"
+
+                class="whatsapp-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Confirmar asistencia
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+PIE DE PÁGINA
+===================================-->
+
+<footer>
+
+    <h3>
+
+        Emily
+
+    </h3>
+
+    <p>
+
+        Gracias por acompañarnos en este momento tan especial.
+
+    </p>
+
+    <p>
+
+        24 de octubre de 2026
+
+    </p>
+
+</footer>
+
+<!--==================================
+BOTONES FLOTANTES
+===================================-->
+
+<a
+
+href="#"
+
+class="back-top"
+
+id="backTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<a
+
+href="https://wa.me/5216691238605"
+
+class="whatsapp-float"
+
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+<!--==================================
+MÚSICA
+===================================-->
+
+<audio
+    id="bgMusic"
+    loop>
+
+    <!-- Cambia el nombre del archivo cuando agregues tu música -->
+    <source src="musica/a-thousand-years.mp3" type="audio/mpeg">
+
+    Tu navegador no soporta audio.
+
+</audio>
+
+<!--==================================
+BOTÓN DE MÚSICA
+===================================-->
+
+<button id="musicButton" class="music-button" aria-label="Reproducir o pausar música">
+
+    <i class="fa-solid fa-music"></i>
+
+</button>
+
+<!--==================================
+LIGHTBOX GALERÍA
+===================================-->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="lightbox-close">&times;</span>
+
+    <img
+        src=""
+        alt="Galería"
+        id="lightboxImage">
+
+</div>
+
+<!--==================================
+SCRIPT
+===================================-->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
