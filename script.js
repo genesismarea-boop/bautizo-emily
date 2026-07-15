@@ -224,7 +224,7 @@ function iniciarAnimaciones() {
 
             if (entrada.isIntersecting) {
 
-                entrada.target.classList.add("visible");
+                entrada.target.classList.add("show");
 
             }
 
